@@ -255,7 +255,8 @@ figure {
       z-index: 1000;
       left: 20px;
       float: left;
-      width: auto; }
+      width: 50px; 
+    height: 100px;}
       @media screen and (max-width: 768px) {
         #colorlib-hero .flexslider .flex-control-nav {
           right: 20px;
