@@ -533,6 +533,7 @@ body.offcanvas #colorlib-aside {
     ;
     z-index: 999;
     position: fixed;
+    height: 100vh;
 }
 
 body.offcanvas #colorlib-main,
