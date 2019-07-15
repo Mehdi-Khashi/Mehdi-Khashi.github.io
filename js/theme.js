@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             document.getElementById("picOne").style.backgroundImage = "url('images/me1.jpg')";
-            document.getElementById("picTwo").style.backgroundImage = "url('images/me2.jpg')";
+            document.getElementById("picTwo").style.backgroundImage = "url('images/me2.JPG')";
 
             console.log('Checked');
         } else {
