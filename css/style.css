@@ -7,9 +7,40 @@
 }
 
 
+/* dark theme */
+
+:root {
+    --color-black: #000;
+    --color-black-dark: #191919;
+    --color-black-light: #323232;
+    --color-black-light-sec: #323232;
+    --color-white: #fff;
+    --color-red-dark: #b20000;
+    --color-red-light: #cc0000;
+    --color-body-text: rgba(255, 255, 255, 0.7);
+    --color-body-text-reverse: rgba(0, 0, 0, 0.5);
+    --color-blue: #2c98f0;
+}
+
+
+/* light theme */
+
+ :root {
+    --color-black: #fff;
+    --color-black-dark: #fff;
+    --color-black-light: #f2f3f7;
+    --color-black-light-sec: #2c98f0;
+    --color-white: #000;
+    --color-red-dark: #2c98f0;
+    --color-red-light: #44a4f2;
+    --color-body-text: rgb(0, 0, 0, 0.5);
+    --color-body-text-reverse: rgba(255, 255, 255, 0.7);
+    --color-blue: #2c98f0;
+}
+
+
 /* =======================================================
 *
-* 	Template Style 
 *	Edit this section
 *
 * ======================================================= */
@@ -19,7 +50,8 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.8;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--color-body-text);
+    background-color: var(--color-black);
 }
 
 @media screen and (max-width: 992px) {
@@ -29,7 +61,7 @@ body {
 }
 
 a {
-    color: #2c98f0;
+    color: var(--color-red-light);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -38,7 +70,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #2c98f0;
+    color: var(--color-red-light);
     outline: none;
     text-decoration: none !important;
 }
@@ -53,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
+    color: var(--color-white);
     font-family: "Playfair Display", Georgia, serif;
     font-weight: 400;
     margin: 0 0 30px 0;
@@ -109,7 +141,7 @@ figure figcaption {
     position: fixed;
     overflow-y: scroll;
     z-index: 1001;
-    background: #f2f3f7;
+    background: var(--color-black-light);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
@@ -157,7 +189,7 @@ figure figcaption {
 #colorlib-aside #colorlib-logo a {
     display: block;
     text-align: center;
-    color: #000;
+    color: var(--color-white);
     padding-right: .3em;
 }
 
@@ -193,7 +225,7 @@ figure figcaption {
 }
 
 #colorlib-aside #colorlib-main-menu ul li a {
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--color-body-text);
     text-decoration: none;
     position: relative;
     padding: 10px 0;
@@ -210,7 +242,7 @@ figure figcaption {
     bottom: 7px;
     left: 0;
     right: 0;
-    background-color: #2c98f0;
+    background-color: var(--color-red-light);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
@@ -226,7 +258,7 @@ figure figcaption {
 
 #colorlib-aside #colorlib-main-menu ul li a:hover {
     text-decoration: none;
-    color: black;
+    color: var(--color-white);
 }
 
 #colorlib-aside #colorlib-main-menu ul li a:hover:after {
@@ -239,7 +271,7 @@ figure figcaption {
 }
 
 #colorlib-aside #colorlib-main-menu ul li.active a {
-    color: #2c98f0;
+    color: var(--color-red-light);
 }
 
 #colorlib-aside #colorlib-main-menu ul li.active a:after {
@@ -255,7 +287,7 @@ figure figcaption {
     font-size: 15px;
     text-align: center;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--color-body-text);
     padding: 0 20px;
     width: 100%;
 }
@@ -284,7 +316,7 @@ figure figcaption {
 }
 
 #colorlib-aside .colorlib-footer ul li a {
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--color-body-text);
     padding: 4px;
 }
 
@@ -366,7 +398,7 @@ figure figcaption {
 }
 
 #colorlib-hero .flexslider .flex-control-nav li a {
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--color-body-text);
     -webkit-box-shadow: none;
     box-shadow: none;
     width: 12px;
@@ -377,7 +409,7 @@ figure figcaption {
 #colorlib-hero .flexslider .flex-control-nav li a.flex-active {
     cursor: pointer;
     background: transparent;
-    border: 2px solid #2c98f0;
+    border: 2px solid var(--color-red-light);
 }
 
 #colorlib-hero .flexslider .flex-direction-nav {
@@ -392,7 +424,7 @@ figure figcaption {
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner {
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: var(--color-body-text-reverse);
     display: table-cell;
     vertical-align: middle;
     min-height: 700px;
@@ -410,7 +442,7 @@ figure figcaption {
 #colorlib-hero .flexslider .slider-text>.slider-text-inner h2 {
     margin: 0;
     padding: 0;
-    color: black;
+    color: var(--color-white);
     font-family: "Playfair Display", Georgia, serif;
 }
 
@@ -470,14 +502,14 @@ figure figcaption {
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn {
-    color: #000;
-    border: 1px solid #000;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
     background: transparent !important;
 }
 
 #colorlib-hero .flexslider .slider-text>.slider-text-inner .btn.btn-learn:hover {
     background: transparent !important;
-    border: 1px solid #000 !important;
+    border: 1px solid var(--color-red-light) !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -497,7 +529,8 @@ body.offcanvas #colorlib-aside {
     -o-transform: translateX(0);
     transform: translateX(0);
     width: 300px;
-    background: #f2f3f7;
+    background: var(--color-black-light);
+    ;
     z-index: 999;
     position: fixed;
 }
@@ -616,10 +649,11 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .hire .btn-hire {
-    color: #000;
+    color: var(--color-white);
+    ;
     text-transform: uppercase;
     letter-spacing: 1px;
-    bordeR: 1px solid #000;
+    bordeR: 1px solid var(--color-white);
     padding: 2px 10px;
 }
 
@@ -636,7 +670,7 @@ body.offcanvas .colorlib-nav-toggle {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: "Quicksand", Arial, sans-serif;
-    background-color: #2c98f0;
+    background-color: var(--color-red-dark);
     color: #fff;
     position: relative;
     -webkit-box-shadow: none !important;
@@ -672,9 +706,9 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .panel-heading a.collapsed {
-    background: #f2f3f7;
+    background: var(--color-red-dark);
     border: 1px solid #e6e6e6 !important;
-    color: #333333;
+    color: #fff;
 }
 
 .panel-body {
@@ -778,7 +812,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
     position: relative;
-    background: #f2f3f7;
+    background: var(--color-black-light);
     padding: 1.5em;
     margin-left: 60px;
     -webkit-background-clip: padding-box;
@@ -811,7 +845,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
-    color: #000;
+    color: var(--color-white);
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
@@ -832,6 +866,7 @@ body.offcanvas .colorlib-nav-toggle {
     -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
     box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
     border-bottom: 2px solid #2c98f0;
+    background-color: var(--color-black-dark);
 }
 
 .services .icon2 {
@@ -1149,7 +1184,7 @@ body.offcanvas .colorlib-nav-toggle {
     height: 100px;
     display: table;
     text-align: center;
-    background: #f2f3f7;
+    background: var(--color-black-light);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -1195,7 +1230,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
-    color: #2c98f0;
+    color: var(--color-red-light);
     font-size: 40px;
 }
 
@@ -1208,7 +1243,7 @@ body.offcanvas .colorlib-nav-toggle {
 .blog-entry {
     width: 100%;
     float: left;
-    background: #fff;
+    background: var(--color-black);
     margin-bottom: 3em;
 }
 
@@ -1251,7 +1286,7 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .blog-entry .desc h3 a {
-    color: #000;
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -1259,7 +1294,7 @@ body.offcanvas .colorlib-nav-toggle {
     display: block;
     margin-bottom: 20px;
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.4) !important;
+    color: var(--color-body-text) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
@@ -1293,11 +1328,11 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .work-menu span a {
-    color: #000;
+    color: var(--color-white);
 }
 
 .work-menu span a.active {
-    color: #2c98f0;
+    color: var(--color-red-light);
 }
 
 .project {
@@ -1317,7 +1352,7 @@ body.offcanvas .colorlib-nav-toggle {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2c98f0;
+    background: var(--color-red-light);
     opacity: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1654,16 +1689,16 @@ body.offcanvas .colorlib-nav-toggle {
 }
 
 .btn-primary {
-    background: #2c98f0;
+    background: var(--color-red-dark);
     color: #fff;
-    border: 2px solid #2c98f0;
+    border: 2px solid var(--color-red-dark);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background: #44a4f2 !important;
-    border-color: #44a4f2 !important;
+    background: var(--color-red-light) !important;
+    border-color: var(--color-red-light) !important;
 }
 
 .btn-primary.btn-outline {
@@ -1807,7 +1842,7 @@ body.offcanvas .colorlib-nav-toggle {
     box-shadow: none;
     background: transparent;
     border: transparent;
-    background: #f2f3f7;
+    background: var(--color-black-light);
     height: 54px;
     font-size: 16px;
     font-weight: 400;
@@ -1840,12 +1875,12 @@ body.offcanvas .colorlib-nav-toggle {
 
 .colorlib-nav-toggle.active i::before,
 .colorlib-nav-toggle.active i::after {
-    background: #000;
+    background: var(--color-white);
 }
 
 .colorlib-nav-toggle.dark.active i::before,
 .colorlib-nav-toggle.dark.active i::after {
-    background: #000;
+    background: var(--color-white);
 }
 
 .colorlib-nav-toggle:hover,
@@ -1863,11 +1898,11 @@ body.offcanvas .colorlib-nav-toggle {
     *display: inline;
     width: 30px;
     height: 2px;
-    color: #000;
+    color: var(--color-white);
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #000;
+    background: var(--color-white);
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
@@ -1878,7 +1913,7 @@ body.offcanvas .colorlib-nav-toggle {
     content: '';
     width: 30px;
     height: 2px;
-    background: #000;
+    background: var(--color-white);
     position: absolute;
     left: 0;
     -webkit-transition: 0.2s;
@@ -1888,8 +1923,8 @@ body.offcanvas .colorlib-nav-toggle {
 
 .colorlib-nav-toggle.dark i {
     position: relative;
-    color: #000;
-    background: #000;
+    color: var(--color-white);
+    background: var(--color-white);
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
@@ -1897,7 +1932,7 @@ body.offcanvas .colorlib-nav-toggle {
 
 .colorlib-nav-toggle.dark i::before,
 .colorlib-nav-toggle.dark i::after {
-    background: #000;
+    background: var(--color-white);
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
@@ -2009,4 +2044,82 @@ body.offcanvas .colorlib-nav-toggle {
 
 .js .animate-box {
     opacity: 0;
+}
+
+
+/* //////////////////////////////////////////////me///////////////////////////////////// */
+
+.panel {
+    background-color: var(--color-black-light);
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
