@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.documentElement.style.setProperty('--color-body-text-reverse', 'rgb(255,255,255,0.7)');
 
 
-            document.getElementById("picOne").style.backgroundImage = "url('images/me1.jpg')";
-            document.getElementById("picTwo").style.backgroundImage = "url('images/me2.JPG')";
+            document.getElementById("picOne").style.backgroundImage = "url('images/img01.jpeg')";
+            document.getElementById("picTwo").style.backgroundImage = "url('images/img02.jpg')";
 
             console.log('Checked');
         } else {
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.documentElement.style.setProperty('--color-body-text', 'rgb(255,255,255,0.5)');
             document.documentElement.style.setProperty('--color-body-text-reverse', 'rgb(0,0,0,0.5)');
 
-            document.getElementById("picOne").style.backgroundImage = "url('images/me1_dark.jpg')";
-            document.getElementById("picTwo").style.backgroundImage = "url('images/me_dark.jpg')";
+            document.getElementById("picOne").style.backgroundImage = "url('images/img04.png')";
+            document.getElementById("picTwo").style.backgroundImage = "url('images/img03.png')";
 
             console.log('Not checked');
         }

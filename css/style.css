@@ -361,6 +361,7 @@ figure figcaption {
     border: none;
     z-index: 1;
     margin-bottom: 0;
+    background-color: var(--color-black);
 }
 
 #colorlib-hero .flexslider .slides {
@@ -371,7 +372,7 @@ figure figcaption {
 #colorlib-hero .flexslider .slides li {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     min-height: 400px;
     position: relative;
 }
