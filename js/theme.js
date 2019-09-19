@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.getElementById("picOne").style.backgroundImage = "url('images/img01.jpeg')";
             document.getElementById("picTwo").style.backgroundImage = "url('images/img02.jpg')";
+            document.getElementById("bdy").style.backgroundImage = "url('images/t1.png')";
 
             console.log('Checked');
         } else {
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             document.getElementById("picOne").style.backgroundImage = "url('images/img04.png')";
             document.getElementById("picTwo").style.backgroundImage = "url('images/img03.png')";
+            document.getElementById("bdy").style.backgroundImage = "url('images/t2.png')";
 
             console.log('Not checked');
         }
