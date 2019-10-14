@@ -1,4 +1,29 @@
 @import "style.css";
+@font-face {
+    font-family: Sahel;
+    src: url('http://fonts.codearena.ir/rastikerdar/sahel/sahel.eot');
+    src: url('http://fonts.codearena.ir/rastikerdar/sahel/sahel.eot?#iefix') format('embedded-opentype'), url('http://fonts.codearena.ir/rastikerdar/sahel/sahel.woff') format('woff'), url('http://fonts.codearena.ir/rastikerdar/sahel/sahel.ttf') format('truetype');
+    font-weight: normal;
+}
+
+html {
+    font-family: sahel !important;
+}
+
+body {
+    font-family: sahel !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: sahel !important;
+}
+
 @media (min-width: 992px) {
     .col-md-pull-3 {
         right: 0%;
@@ -21,7 +46,6 @@
         float: right;
     }
 }
-
 
 .panel-heading a:after {
     left: 20px;
@@ -64,4 +88,8 @@ html {
 .colorlib-feature .colorlib-text {
     padding-right: 120px;
     padding-left: unset;
+}
+
+.work-menu span:first-child {
+    margin-left: 10px;
 }
