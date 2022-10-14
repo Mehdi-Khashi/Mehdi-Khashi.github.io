@@ -43,6 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 2;
 }
 
 .main_text_style_2 {
@@ -71,6 +72,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    z-index: 2;
 }
 
 .text_only_border {
@@ -83,6 +85,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    z-index: 2;
 }
 
 .fill_style_bt{
@@ -145,6 +148,7 @@ body {
     top: 20px;
     right: 30px;
     color: #ffffff;
+    z-index: 2;
 }
 
 .navBar .fill_style_bt{
@@ -154,6 +158,15 @@ body {
 
 a{
     text-decoration: none;
+}
+
+.center_img{
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    width: 500px;
+    transition: all 1s;
+    left: 34%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -216,7 +229,7 @@ a{
     }
 
     .navBar .fill_style_bt {
-        width: 161px;
+        width: 180px;
         font-size: 11px;
     }
 
