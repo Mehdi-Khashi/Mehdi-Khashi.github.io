@@ -2,7 +2,7 @@ function myFunction(e) {
     var x = e.clientX;
     var y = e.clientY;
     var coor = "Coordinates: (" + x + "," + y + ")";
-    console.log(coor);
+    // console.log(coor);
     // document.getElementById("movethis").style.top = document.getElementById("movethis").getBoundingClientRect().top - 15 + 'px';
     if(y < 400){
         document.getElementById("movethis").style.top = 24 +'%';
