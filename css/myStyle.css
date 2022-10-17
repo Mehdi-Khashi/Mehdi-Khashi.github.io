@@ -168,12 +168,14 @@ a{
 }
 
 .center_img{
+
     position: absolute;
     top: 30%;
     z-index: 1;
-    width: 500px;
+    max-width: 500px;
     transition: all 1s;
     left: 34%;
+    width: 66%;
 }
 
 @media only screen and (max-width: 1000px) {
