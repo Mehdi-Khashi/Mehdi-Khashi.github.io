@@ -25,7 +25,7 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background: #ffffff;
+    background: #f2eee8;
     overflow: hidden;
     flex-direction: column;
     max-width: 100%;
@@ -186,6 +186,73 @@ a{
     transition: all 1s;
     left: 34%;
     width: 66%;
+}
+
+.blackSc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+    width: 0;
+    background-color: #0B0B0B;
+    transition: all 1s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logoPrimary{
+    color: #ffffff;
+}
+
+.text_only_border_primary {
+    -webkit-text-stroke: 1px #ffffff !important;
+}
+
+.fill_style_bt_primary{
+    background-color: #fff;
+    color: #1b1b1b;
+}
+
+.fill_style_bt_primary a{
+    color: #1b1b1b;
+}
+
+.stork_style_bt_primary{
+    border: 1px solid #fff;
+}
+
+.stork_style_bt_primary a{
+    color: #fff;
+}
+
+.navBar .fill_style_bt_primary:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.main_text_style_1_primary{
+    -webkit-text-stroke: 1px #fff!important;
+}
+
+.main_text_style_1_primary:hover{
+    color: #fff !important;
+}
+
+.main_text_style_2_primary{
+    color: #fff;
+}
+
+.hideAll{
+    width: 100%;
+    position: absolute;
+    background-color: #0B0B0B;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    height: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
