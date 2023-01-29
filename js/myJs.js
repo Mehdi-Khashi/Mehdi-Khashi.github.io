@@ -1,3 +1,5 @@
+var sec = 0;
+
 function myFunction(e) {
     var x = e.clientX;
     var y = e.clientY;
@@ -41,9 +43,11 @@ function blackScreen() {
 
 function blackScreenHide() {
     document.getElementById('blackSc').style.cssText = 'width: 0%;';
+    document.getElementById('blackSc2').style.cssText = 'width: 0%;';
     document.getElementById('skillSc').style.cssText = 'width: 0%;';
     document.getElementById('hideAll').style.cssText = 'width: 100%;';
     document.getElementById('hideAll2').style.cssText = 'width: 100%;';
+    document.getElementById('hideAll3').style.cssText = 'width: 100%;';
 }
 
 function skillScreen() {
@@ -53,15 +57,37 @@ function skillScreen() {
         document.getElementById('hideAll2').style.cssText = 'width: 0%;';
     }
         , 900);
+
+        
+        document.getElementById('react').style.cssText = 'width: 0%;';
+        document.getElementById('vue').style.cssText = 'width: 0%;';
+        document.getElementById('java').style.cssText = 'width: 0%;';
     setTimeout(() => {
-        document.getElementById('react').style.cssText = 'width: 85%;';
-        document.getElementById('vue').style.cssText = 'width: 75%;';
-        document.getElementById('java').style.cssText = 'width: 80%;';
+        sec = 0;
+        handleSec();
     }
         , 1100);
 }
 
-var sec = 0;
+function showMenu(){
+
+    document.getElementById('blackSc2').style.cssText = 'width: 100%; height: 100%';
+    setTimeout(() => {
+        document.getElementById('hideAll3').style.cssText = 'width: 0%;';
+    }
+        , 900);
+
+}
+
+function hideMenu(){
+
+    document.getElementById('blackSc2').style.cssText = 'width: 0%; height: 0%';
+    document.getElementById('hideAll3').style.cssText = 'width: 100%;';
+   
+
+}
+
+
 
 function nextSecClick() {
 
@@ -95,13 +121,14 @@ function prevSecClick() {
 
 function handleSec() {
 
-    console.log("h " + sec);
     if (sec <= 0) {
         sec = 0;
         document.getElementById('leftar').style.cssText = 'display: none;';
+        document.getElementById('rightar').style.cssText = 'display: block;';
     } else if (sec >= 2) {
         sec = 2;
         document.getElementById('rightar').style.cssText = 'display: none;';
+        document.getElementById('leftar').style.cssText = 'display: block;';
     } else {
         document.getElementById('leftar').style.cssText = 'display: block;';
         document.getElementById('rightar').style.cssText = 'display: block;';

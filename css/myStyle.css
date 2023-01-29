@@ -167,7 +167,7 @@ body {
 }
 
 .navBar .fill_style_bt {
-    width: 230px;
+    width: 90px;
     font-size: 14px;
     font-family: apercu;
 }
@@ -199,6 +199,22 @@ a {
     z-index: 100;
     width: 0;
     background-color: #0B0B0B;
+    transition: all 1s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blackSc2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    z-index: 100;
+    width: 0;
+    background-color: #1b1b1b;
     transition: all 1s;
     overflow: hidden;
     display: flex;
@@ -278,6 +294,16 @@ a {
     width: 100%;
     position: absolute;
     background-color: #fff;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.hideAll3{
+    width: 100%;
+    position: absolute;
+    background-color: #1b1b1b;
     z-index: 200;
     left: 0;
     top: 0;
@@ -440,6 +466,11 @@ span{
     width: 90%;
 }
 
+.spanstyle{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
     .main_text_style_1 {
         font-size: 6em;
@@ -507,7 +538,7 @@ span{
     }
 
     .navBar .fill_style_bt {
-        width: 180px;
+        width: 80px;
         font-size: 11px;
     }
 
