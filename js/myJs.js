@@ -42,3 +42,14 @@ function blackScreenHide() {
     document.getElementById('blackSc').style.cssText = 'width: 0%;';
     document.getElementById('hideAll').style.cssText = 'width: 100%;';
 }
+
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        // document.querySelector("body").style.visibility = "hidden";
+        // document.querySelector("body").style.cssText = "background-color: #0B0B0B; visibility: hidden;";
+        document.querySelector("#loader").style.visibility = "visible";
+    } else {
+        document.querySelector("#loader").style.display = "none";
+        document.querySelector("body").style.cssText = "background-color: #f2eee8; visibility: visible;";
+    }
+};
