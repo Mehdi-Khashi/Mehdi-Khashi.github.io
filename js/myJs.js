@@ -32,6 +32,7 @@ function clearCoor() {
 
 
 function blackScreen() {
+    document.getElementById('hideAll2').style.cssText = 'width: 100%;';
     document.getElementById('skillSc').style.cssText = 'width: 0%;';
     document.getElementById('blackSc').style.cssText = 'width: 100%;';
     setTimeout(() => {
@@ -51,6 +52,7 @@ function blackScreenHide() {
 }
 
 function skillScreen() {
+    document.getElementById('hideAll').style.cssText = 'width: 100%;';
     document.getElementById('blackSc').style.cssText = 'width: 0%;';
     document.getElementById('skillSc').style.cssText = 'width: 100%;';
     setTimeout(() => {

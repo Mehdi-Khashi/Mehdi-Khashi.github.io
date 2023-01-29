@@ -194,7 +194,7 @@ a {
 .blackSc {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
     z-index: 100;
     width: 0;
@@ -448,22 +448,6 @@ span{
 
 .m-b-10{
     margin-bottom: 10px;
-}
-
-.fill50{
-    width: 50%;
-}
-
-.fill75{
-    width: 75%;
-}
-
-.fill80{
-    width: 80%;
-}
-
-.fill90{
-    width: 90%;
 }
 
 .spanstyle{
