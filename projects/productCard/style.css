@@ -425,9 +425,7 @@ span {
     width: 50px !important;
   }
 
-  .wheelContainer {
-    padding-bottom: 5px;
-  }
+
 
   /* .buyBt {
     right: 35px;
@@ -477,10 +475,9 @@ span {
   }
 
   .wheelContainer {
-    padding-bottom: 15px;
 
     position: absolute;
-    bottom: 0;
+    bottom: 3%;
     left: 0;
     right: 0;
     /* margin: auto; */
@@ -513,10 +510,9 @@ span {
 
 @media only screen and (max-width: 500px) {
   .wheelContainer {
-    padding-bottom: 15px;
 
     position: absolute;
-    bottom: 0;
+    bottom: 3%;
     left: -107px;
     right: 0;
     /* margin: auto; */
