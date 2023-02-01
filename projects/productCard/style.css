@@ -395,6 +395,8 @@ span {
 
   .wheelContainer{
     margin: 0 auto;
+    margin-bottom: 5%;
+    /* padding: 1; */
   }
 
   @keyframes jump {
@@ -481,7 +483,7 @@ span {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    /* margin: auto; */
 
   }
 
@@ -517,7 +519,7 @@ span {
     bottom: 0;
     left: -107px;
     right: 0;
-    margin: auto;
+    /* margin: auto; */
 
   }
 
@@ -612,4 +614,8 @@ span {
 
 #wheelContainer2 {
   z-index: 11;
+}
+
+.wheelContainer h4{
+  width: max-content;
 }
