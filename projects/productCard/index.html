@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Product Card || Projects </title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="../../img/icon/micon.png">
+
+</head>
+
+<body>
+<div class="Split-background">
+  <div id="leftOne" class="leftOne">
+
+    <div id="wheelContainer22" class="wheelContainer2">
+      <img id="wheelB" class="wheel1B" src="img/wheel1.png" />
+    </div>
+    <div id="bikeContainer" class="bikeContainer">
+      
+      <img class="rear" src="img/rear.png"/>
+      <img class="seat" src="img/seat.png"/>
+      <img class="shaft" src="img/shaft.png"/>
+      <img class="stem" src="img/stem.png" />
+      
+    </div>
+
+    <div id="wheelContainer2" class="wheelContainer2">
+      <img id="wheelF" class="wheel1F" src="img/wheel1.png" />
+    </div>
+
+    <button onclick="checkBtClick()" id="buyBt" class="buyBt">
+      Check Out
+    </button>
+
+  </div>
+  <div class="rightOne">
+    <h2 id="text1" class="textStyle">Configure the Bike</h2>
+    <div id="wheelContainer" class="wheelContainer">
+      <h4>Wheels</h4>
+      <div class="wheels">
+        <div id="wb0" class="wheelBox activeWheel" onclick="activeWheel(0)">
+          <img  class="wheelImg" src="img/wheel1.png"/>
+          <p>Wheel01</p>
+        </div>
+        <div id="wb1" class="wheelBox"  onclick="activeWheel(1)">
+          <img class="wheelImg" src="img/wheel2.png"/>
+          <p>Wheel02</p>
+        </div>
+        <div id="wb2" class="wheelBox"  onclick="activeWheel(2)">
+          <img class="wheelImg" src="img/wheel3.png"/>
+          <p>Wheel03</p>
+        </div>
+        <div id="wb3" class="wheelBox"  onclick="activeWheel(3)">
+          <img class="wheelImg" src="img/wheel4.png"/>
+          <p>Wheel04</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="rightrightOne" class="rightrightOne">
+
+    <button id="backBt" onclick="backClick()" class=" backBt">
+      back
+    </button>
+
+  </div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

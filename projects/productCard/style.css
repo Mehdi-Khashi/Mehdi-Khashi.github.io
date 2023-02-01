@@ -1,0 +1,615 @@
+@font-face {
+  font-family: 'sansSemiBlack';
+  src: url('../../fonts/sansSemiCondensed/EncodeSansSemiCondensed-Black.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'sfPro';
+  src: url('../../fonts/sfPro/SFPRODISPLAYREGULAR.OTF') format('opentype')
+}
+
+@font-face {
+  font-family: 'apercu';
+  src: url('../../fonts/ApercuFontFamily/ApercuProRegular.otf') format('opentype')
+}
+
+body {
+  font-family: 'sfPro';
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+p,
+span {
+  font-family: 'apercu';
+}
+
+.Split-background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.Split-background .leftOne {
+  width: 35%;
+  height: 100%;
+  background-color: #4e567d;
+  position: relative;
+  transition: width 1s;
+}
+
+.Split-background .rightOne {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  position: relative;
+}
+
+.Split-background .rightrightOne {
+  height: 100%;
+  width: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  transition: width 1s;
+  background-color: #4e567d;
+  position: relative;
+}
+
+.rightOne .textStyle {
+  padding: 50px;
+  font-size: 40px;
+}
+
+.wheelContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  justify-content: flex-start;
+}
+
+.wheelContainer .wheels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheelBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid #b2b2b2;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.wheelImg {
+  width: 100px;
+  height: auto;
+}
+
+.wheelBox:hover {
+  border-color: #ff6a5e;
+}
+
+.activeWheel {
+  border-color: #ff6a5e;
+}
+
+.bikeContainer {
+  position: absolute;
+  /* margin-left: 60%;
+  margin-top: 34%; */
+  width: 0;
+  height: 0;
+  top: 23%;
+  left: 60%;
+  transition: all 1s;
+  z-index: 10;
+}
+
+.wheelContainer2 {
+  position: absolute;
+  /* margin-left: 60%;
+  margin-top: 34%; */
+  width: 0;
+  height: 0;
+  top: 23%;
+  left: 60%;
+  transition: all 1s;
+  z-index: 9;
+}
+
+.rear {
+  position: absolute;
+  left: -41px;
+  top: -35px;
+}
+
+.seat {
+  position: absolute;
+  left: -42px;
+  top: -35px;
+}
+
+.shaft {
+  position: absolute;
+  left: -42px;
+  top: -35px;
+}
+
+.stem {
+  position: absolute;
+  left: -42px;
+  top: -35px;
+}
+
+.wheel1F {
+  position: absolute;
+  left: 265px;
+  top: 142px;
+  width: 187px;
+}
+
+.wheel1B {
+  position: absolute;
+  left: -68px;
+  top: 143px;
+  width: 187px;
+}
+
+.rotateAnimation {
+  animation: rotate 2s;
+}
+
+.WBOut {
+  animation: BOut 1s;
+}
+
+.WFOut {
+  animation: FOut 1s;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(500deg);
+  }
+}
+
+@keyframes BOut {
+  100% {
+    left: -100vw;
+    transform: rotate(720deg)
+  }
+}
+
+@keyframes FOut {
+  100% {
+    left: 100vw;
+    transform: rotate(720deg)
+  }
+}
+
+
+.WBIn {
+  animation: BIn 0.6s;
+}
+
+.WFIn {
+  animation: FIn 0.6s;
+}
+
+@keyframes BIn {
+  0% {
+    left: -100vw;
+  }
+
+  100% {
+    left: -68px;
+    transform: rotate(720deg)
+  }
+}
+
+@keyframes FIn {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: 265px;
+    transform: rotate(720deg)
+  }
+}
+
+.bikeJump {
+  animation: jump 1.4s;
+}
+
+@keyframes jump {
+  0% {
+    top: 23%;
+  }
+
+  10% {
+    top: 12%;
+  }
+
+  70% {
+    top: 12%;
+  }
+
+  100% {
+    top: 23%;
+  }
+}
+
+.buyBt {
+  width: 130px;
+  height: 60px;
+  background-color: #ff6a5e;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  border-width: 0;
+  box-shadow: none;
+}
+
+.buyBt:hover {
+  background-color: #ff695eb8;
+}
+
+.backBt {
+  width: 130px;
+  height: 60px;
+  background-color: #ff6a5e;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  border-width: 0;
+  box-shadow: none;
+  display: none;
+}
+
+.backBt:hover {
+  background-color: #ff695eb8;
+}
+
+.goRight{
+  left: 50vw !important;
+}
+
+@media only screen and (min-width: 1351px) {}
+
+@media only screen and (max-width: 1350px) {
+
+  .seat,
+  .rear,
+  .shaft,
+  .stem {
+    width: 309px;
+  }
+
+
+  .wheel1F {
+    left: 183px;
+    top: 95px;
+    width: 128px;
+  }
+
+  .wheel1B {
+    left: -62px;
+    top: 98px;
+    width: 128px;
+  }
+
+  @keyframes BIn {
+    0% {
+      left: -100vw;
+    }
+
+    100% {
+      left: -62px;
+      transform: rotate(720deg)
+    }
+  }
+
+  @keyframes FIn {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 183px;
+      transform: rotate(720deg)
+    }
+  }
+
+  .bikeContainer,
+  .wheelContainer2 {
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .textStyle {
+    font-size: 30px !important;
+  }
+
+  .wheelImg {
+    width: 70px !important;
+  }
+
+  .buyBt {
+    width: 130px;
+    height: 55px;
+  }
+
+  .backBt{
+    width: 130px;
+    height: 55px;
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .bikeContainer,
+  .wheelContainer2 {
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .rightOne {
+    justify-content: space-between !important;
+  }
+
+  .bikeContainer,
+  .wheelContainer2 {
+    left: 49%;
+    top: 14%;
+  }
+
+  .wheelContainer{
+    margin: 0 auto;
+  }
+
+  @keyframes jump {
+    0% {
+      top: 14%;
+    }
+
+    10% {
+      top: 10%;
+    }
+
+    70% {
+      top: 10%;
+    }
+
+    100% {
+      top: 14%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 740px) {
+
+  .wheelImg {
+    width: 50px !important;
+  }
+
+  .wheelContainer {
+    padding-bottom: 5px;
+  }
+
+  /* .buyBt {
+    right: 35px;
+  } */
+  .goRight{
+    left: 37vw !important;
+  }
+
+
+  .bikeContainer,
+  .wheelContainer2 {
+    left: 35%;
+    top: 24%;
+  }
+
+  @keyframes jump {
+    0% {
+      top: 24%;
+    }
+
+    10% {
+      top: 14%;
+    }
+
+    70% {
+      top: 14%;
+    }
+
+    100% {
+      top: 24%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .textStyle {
+    font-size: 20px !important;
+  }
+
+  .wheelImg {
+    width: 35px !important;
+  }
+
+  .wheelBox {
+    font-size: 12px;
+  }
+
+  .wheelContainer {
+    padding-bottom: 15px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+  }
+
+  .buyBt {
+    /* right: 6px !important; */
+    width: 90px !important;
+    font-size: 11px;
+    top: 20px !important
+  }
+
+  .backBt{
+    font-size: 11px;
+    width: 90px;
+  }
+
+
+  .leftOne {
+    width: 20%;
+  }
+
+  .rightOne {
+    width: 80%;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  .wheelContainer {
+    padding-bottom: 15px;
+
+    position: absolute;
+    bottom: 0;
+    left: -107px;
+    right: 0;
+    margin: auto;
+
+  }
+
+  .seat,
+  .rear,
+  .shaft,
+  .stem {
+    width: 200px;
+  }
+
+
+
+  .bikeContainer,
+  .wheelContainer2 {
+    
+    left: 65%;
+    top: 37%;
+
+  }
+
+  .goRight{
+    left: 45vw !important;
+  }
+
+  @keyframes jump {
+    0% {
+      top: 37%;
+    }
+  
+    10% {
+      top: 26%;
+    }
+  
+    70% {
+      top: 26%;
+    }
+  
+    100% {
+      top: 37%;
+    }
+  }
+
+  .wheel1B {
+    left: -52px;
+    top: 52px;
+    width: 82px;
+  }
+
+  .wheel1F {
+    left: 105px;
+    top: 52px;
+    width: 82px;
+  }
+
+  @keyframes BIn {
+    0% {
+      left: -100vw;
+    }
+
+    100% {
+      left: -52px;
+      transform: rotate(720deg)
+    }
+  }
+
+  @keyframes FIn {
+    0% {
+      left: 100vw;
+    }
+
+    100% {
+      left: 105px;
+      transform: rotate(720deg)
+    }
+  }
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+  .goRight{
+    left: 37vw !important;
+  }
+
+  .wheelBox{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+}
+
+#wheelContainer2 {
+  z-index: 11;
+}
