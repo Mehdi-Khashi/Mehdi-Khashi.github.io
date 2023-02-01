@@ -57,7 +57,7 @@ span {
   width: 0%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   transition: width 1s;
   background-color: #4e567d;
@@ -281,7 +281,7 @@ span {
   height: 60px;
   background-color: #ff6a5e;
   position: absolute;
-  bottom: 5%;
+  bottom: 13%;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -484,16 +484,17 @@ span {
 
   }
 
-  .buyBt, #buyBt {
+  .buyBt {
     width: 90px ;
     font-size: 11px;
     top: 10% ;
     bottom: unset ;
   }
 
-  .backBt{
+  .backBt {
+    width: 90px ;
     font-size: 11px;
-    width: 90px;
+    bottom: 14% ;
   }
 
 
