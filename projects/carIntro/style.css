@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'sansSemiBlack';
+  src: url('../../fonts/sansSemiCondensed/EncodeSansSemiCondensed-Black.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'sfPro';
+  src: url('../../fonts/sfPro/SFPRODISPLAYREGULAR.OTF') format('opentype')
+}
+
+@font-face {
+  font-family: 'apercu';
+  src: url('../../fonts/ApercuFontFamily/ApercuProRegular.otf') format('opentype')
+}
+
+body {
+  font-family: 'sfPro';
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p,
+span {
+  font-family: 'apercu';
+}
+
+.img{
+  width: 300px;
+  /* animation: rotateAnimation 1s linear infinite; */
+}
+
+@keyframes rotateAnimation{
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(30deg);}
+}
+
+
+
+  model-viewer {
+   width: 500px;
+   height: 500px;
+  }

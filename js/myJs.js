@@ -1,4 +1,5 @@
 var sec = 0;
+var work = 0;
 
 function myFunction(e) {
     var x = e.clientX;
@@ -37,8 +38,13 @@ function blackScreen() {
     document.getElementById('blackSc').style.cssText = 'width: 100%;';
     setTimeout(() => {
         document.getElementById('hideAll').style.cssText = 'width: 0%;';
+
+        work = 0;
+        handleWork();
     }
         , 900);
+
+    
 
 }
 
@@ -60,10 +66,10 @@ function skillScreen() {
     }
         , 900);
 
-        
-        document.getElementById('react').style.cssText = 'width: 0%;';
-        document.getElementById('vue').style.cssText = 'width: 0%;';
-        document.getElementById('java').style.cssText = 'width: 0%;';
+
+    document.getElementById('react').style.cssText = 'width: 0%;';
+    document.getElementById('vue').style.cssText = 'width: 0%;';
+    document.getElementById('java').style.cssText = 'width: 0%;';
     setTimeout(() => {
         sec = 0;
         handleSec();
@@ -71,7 +77,7 @@ function skillScreen() {
         , 1100);
 }
 
-function showMenu(){
+function showMenu() {
 
     document.getElementById('blackSc2').style.cssText = 'width: 100%; height: 100%';
     setTimeout(() => {
@@ -81,11 +87,11 @@ function showMenu(){
 
 }
 
-function hideMenu(){
+function hideMenu() {
 
     document.getElementById('blackSc2').style.cssText = 'width: 0%; height: 0%';
     document.getElementById('hideAll3').style.cssText = 'width: 100%;';
-   
+
 
 }
 
@@ -195,6 +201,34 @@ function handleSec() {
 
     }
 
+}
+
+function nextworkclick() {
+    work++;
+    handleWork();
+}
+
+function prevworkclick() {
+    work--;
+    handleWork();
+}
+
+function handleWork() {
+    if (work <= 0) {
+        work = 0;
+        document.getElementById('workOne').style.cssText = 'display: block;';
+        document.getElementById('workTwo').style.cssText = 'display: none;';
+        document.getElementById("workNum").innerHTML = '1 of 2';
+        document.getElementById('prevworkarrow').style.cssText = 'display: none;';
+        document.getElementById('nextworkarrow').style.cssText = 'display: block;';
+    } else if (work >= 1) {
+        work = 1;
+        document.getElementById('workOne').style.cssText = 'display: none;';
+        document.getElementById('workTwo').style.cssText = 'display: block;';
+        document.getElementById("workNum").innerHTML = '2 of 2';
+        document.getElementById('prevworkarrow').style.cssText = 'display: block;';
+        document.getElementById('nextworkarrow').style.cssText = 'display: none;';
+    }
 }
 
 
