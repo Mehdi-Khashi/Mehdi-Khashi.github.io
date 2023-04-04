@@ -21,20 +21,31 @@
 
 <body>
 
-  <div>
 
-    <model-viewer src="/projects/carIntro/model/car.gltf" camera-controls auto-rotate disable-zoom></model-viewer>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <div class="loadingPage" id="loadingPage">
+    <div class="loader">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+  <span class="cl-White">please waite this may take while...</span>
   </div>
 
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-  <model-viewer src="model/Astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="img/poster.webp" shadow-intensity="1"> </model-viewer>
+
+  <model-viewer id="modelViewer" src="/projects/carIntro/model/car.gltf"
+ 
+   camera-role exposure="1" shadow-intensity="3"
+    camera-orbit="0deg 50deg 50%" camera-target="-9.5m -12.9m 2.2m" disable-zoom></model-viewer>
+
+    <button class="posBt" onclick="btClicked()">change Positon</button>
 
 
 
   <script src="script.js"></script>
 
-  </meta> -->
+  </meta>
 </body>
 
 </html>
