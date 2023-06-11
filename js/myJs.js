@@ -218,14 +218,23 @@ function handleWork() {
         work = 0;
         document.getElementById('workOne').style.cssText = 'display: block;';
         document.getElementById('workTwo').style.cssText = 'display: none;';
-        document.getElementById("workNum").innerHTML = '1 of 2';
+        document.getElementById('workThree').style.cssText = 'display: none;';
+        document.getElementById("workNum").innerHTML = '1 of 3';
         document.getElementById('prevworkarrow').style.cssText = 'display: none;';
         document.getElementById('nextworkarrow').style.cssText = 'display: block;';
-    } else if (work >= 1) {
-        work = 1;
+    } else if (work == 1) {
         document.getElementById('workOne').style.cssText = 'display: none;';
         document.getElementById('workTwo').style.cssText = 'display: block;';
-        document.getElementById("workNum").innerHTML = '2 of 2';
+        document.getElementById('workThree').style.cssText = 'display: none;';
+        document.getElementById("workNum").innerHTML = '2 of 3';
+        document.getElementById('prevworkarrow').style.cssText = 'display: block;';
+        document.getElementById('nextworkarrow').style.cssText = 'display: block;';
+    } else if (work >= 2) {
+        work = 2;
+        document.getElementById('workOne').style.cssText = 'display: none;';
+        document.getElementById('workTwo').style.cssText = 'display: none;';
+        document.getElementById('workThree').style.cssText = 'display: block;';
+        document.getElementById("workNum").innerHTML = '3 of 3';
         document.getElementById('prevworkarrow').style.cssText = 'display: block;';
         document.getElementById('nextworkarrow').style.cssText = 'display: none;';
     }
@@ -242,3 +251,21 @@ document.onreadystatechange = function () {
         document.querySelector("body").style.cssText = "background-color: #f2eee8; visibility: visible;";
     }
 };
+
+function showDemo(i){
+
+    if(i == 1){
+        document.getElementById("demoImg").src = "img/bikeDemo.png";
+    }else if(i ==2){
+        document.getElementById("demoImg").src = "img/carDemo.png";
+    }else if(i ==3){
+        document.getElementById("demoImg").src = "img/podsDemo.png";
+    }
+
+    document.getElementById('demoImg').style.cssText = 'width: 300px;';
+
+}
+
+function hideDemo(){
+    document.getElementById('demoImg').style.cssText = 'width: 0;';
+}

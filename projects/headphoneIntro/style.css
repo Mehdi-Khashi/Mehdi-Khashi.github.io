@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'sansSemiBlack';
+  src: url('../../fonts/sansSemiCondensed/EncodeSansSemiCondensed-Black.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'sfPro';
+  src: url('../../fonts/sfPro/SFPRODISPLAYREGULAR.OTF') format('opentype')
+}
+
+@font-face {
+  font-family: 'apercu';
+  src: url('../../fonts/ApercuFontFamily/ApercuProRegular.otf') format('opentype')
+}
+
+body {
+  font-family: 'sfPro';
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+p,
+span {
+  font-family: 'apercu';
+}
+
+
+.background {
+  /* background-color:#8aaf8b; */
+  background: radial-gradient(#aac5ab, #7ea47f);
+  width: 100vw;
+  height: 100vh;
+  transition: all 4s;
+  /* transition: background-color 3.5s ease; */
+  overflow: hidden;
+}
+
+.product-img {
+  position: absolute;
+  right: 5vw;
+  /* max-width: 200px; */
+  width: 185px;
+  top: 8vh;
+  filter: blur(3px);
+  z-index: 6;
+ 
+}
+
+
+
+.describ {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+  font-family: sansSemiBlack;
+  z-index: 100;
+}
+
+.info-text {
+  max-width: 430px;
+  width: 90%;
+  margin-top: 15vh;
+  
+}
+
+.info-text span{
+  width: 100%;
+  font-family: 'apercu';
+  
+}
+
+.justify{
+  width: 100%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.next-img {
+  position: absolute;
+  right: 5vw;
+  /* max-width: 200px; */
+  width: 185px;
+  top: 8vh;
+  filter: blur(3px);
+  transition: all 4s;
+  z-index: 6;
+}
+
+.prev-img {
+  position: absolute;
+  right: 5vw;
+  /* max-width: 200px; */
+  width:185px;
+  top: 70vh;
+  filter: blur(3px);
+  transition: all 4s;
+  z-index: 4;
+
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.rLogo {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+.greenBg{
+  transition: all 4s;
+  background: radial-gradient(#aac5ab, #7ea47f);
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pinkBg{
+  transition: all 4s;
+  background: radial-gradient(#d097a0, #c16d79);
+  z-index: 1;
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.whiteBg{
+  transition: all 4s;
+  background: radial-gradient(#a5b7b8, #7d999b);
+  z-index: 1;
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
